@@ -57,7 +57,7 @@
 			<div class="col">
 				<h5 class="font-weight-bold is-blue">Thank you for your interest in trying Elconfig.</h1>
 				<h5>Although we're currently in Beta before our official release, we're proud to offer a completely free trial of Elconfig in exchange for your valuable feedback.</h5>
-				<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+				<ul class="nav nav-tabs justify-content-center" id="hostTabs" role="tablist">
 				  <li class="nav-item">
 				    <a class="nav-link active" id="cloud-tab" data-toggle="tab" href="#cloud" role="tab" aria-controls="home" aria-selected="true">Cloud</a>
 				  </li>
@@ -67,11 +67,97 @@
 				</ul>
 				<div class="tab-content pt-4" id="myTabContent">
 				  <div class="tab-pane fade show active" id="cloud" role="tabpanel" aria-labelledby="home-tab">
-				  	<p class="">
-				  		<button class="btn btn-outline-success mr-2 btn-trial" type="submit">Try it free</button>
-				  		<button class="btn btn-secondary mr-2 disabled btn-trial" type="submit" disabled>Buy</button>
-				  	</p>
-				  	<p>Maintaining a deployed application and providing high availability and scalability can be time consuming.</p>
+				  	<div class="row">
+				  		
+				  		<div class="col-7">
+						  	<p class="">
+						  		<button class="btn btn-success mr-2 btn-trial" type="submit" data-toggle="collapse" href="#card-register" role="button" aria-expanded="false" aria-controls="card-register">Try it free</button>
+						  		<button class="btn btn-secondary mr-2 disabled btn-trial" title="This is unavailable during beta" type="submit"><span class="locked"><i class="fas fa-lock"></i></span>Buy</button>
+						  	</p>
+						  	<p>Maintaining a deployed application and providing high availability and scalability can be time consuming.</p>
+						  	<p>Our cloud hosted option is a hassle-free solution for your configuration needs. Let Elgorithm handle the infastructure and provide the high availability so you can focus on what matters the most: your application.</p>
+							<p>We'll provide the hosted Elconfig web application and endpoint for your application to communicate with. We'll take care of maintenance and monitoring and ensure reliability by utilizing the latest cloud computing technologies.</p>
+							<div class="card text-white mb-3 mt- collapse show" id="card-register">
+							  <div class="card-header">Please enter your email below in order to receive the login details to your Elconfig trial instance. This process might take up to a few minutes.</div>
+							  <div class="card-body">
+							    <form>
+								  <div class="form-group row">
+								    <label for="colFormLabel" class="col-sm-4 col-form-label">Name <span class="required">*</span></label>
+								    <div class="col-sm-8">
+								      <input type="text" class="form-control" id="register-name" required>
+								    </div>
+								  </div>
+								  <div class="form-group row">
+								    <label for="colFormLabel" class="col-sm-4 col-form-label">Email <span class="required">*</span></label>
+								    <div class="col-sm-8">
+								      <input type="email" class="form-control" id="register-email" required>
+								    </div>
+								  </div>
+								  <div class="form-group row">
+								    <label for="colFormLabel" class="col-sm-4 col-form-label">Phone number <span class="optional">(optional)</span></label>
+								    <div class="col-sm-8">
+								      <input type="number" class="form-control" id="register-phone" >
+								    </div>
+								  </div>
+								  <div class="form-group row">
+								    <label for="colFormLabel" class="col-sm-4 col-form-label">Company <span class="optional">(optional)</span></label>
+								    <div class="col-sm-8">
+								      <input type="text" class="form-control" id="register-company" >
+								    </div>
+								  </div>
+								  <div class="form-group row">
+								    <label for="colFormLabel" class="col-sm-4 col-form-label">Job Title <span class="optional">(optional)</span></label>
+								    <div class="col-sm-8">
+								      <input type="text" class="form-control" id="register-title" >
+								    </div>
+								  </div>
+								  <div class="form-group row">
+								    <label for="colFormLabel" class="col-sm-4 col-form-label">Country <span class="optional">(optional)</span></label>
+								    <div class="col-sm-8">
+								      <select class="form-control" id="register-country">
+										  <option>United States</option>
+										</select>
+								    </div>
+								  </div>
+								  <div class="form-group row">
+								    <label for="colFormLabel" class="col-sm-4 col-form-label">Message <span class="optional">(optional)</span></label>
+								    <div class="col-sm-8">
+								      <textarea type="text" rows="5" class="form-control" id="register-message"></textarea>
+								      <div class="form-check mt-2">
+										  <input class="form-check-input" type="checkbox" value="" id="register-subscribe">
+										  <label class="form-check-label optional" for="register-subscribe">
+										    I want to subscribe to Elgorithm news and updates.
+										  </label>
+									  </div>
+								    </div>
+								  </div>
+								  <button type="submit" class="btn btn-block btn-success">Initialize my instance</button>
+								</form>
+							  </div>
+							</div>
+				  		</div>
+				  		<div class="col-5">
+				  			<div class="row">
+				  				<div class="col text-center">
+				  					<h5>Cloud benefits</h5>
+				  					<img src="images/cloud-tree.png" class="trial-img">
+				  				</div>
+				  			</div>
+				  			<div class="row">
+				  				<div class="col">
+				  					<ul>
+				  						<li>
+				  							Get up and running quickly — we set up and host Elconfig for you
+				  						</li>
+				  						<li>
+											No servers, no storage, and no maintenance — we handle everything
+				  						</li>
+				  					</ul>
+				  				</div>
+				  			</div>	
+				  		</div>
+
+				  	</div>
 				</div>
 				<div class="tab-pane fade" id="self-hosted" role="tabpanel" aria-labelledby="profile-tab">
 				<p>The self-hosted option gives you complete control.</p>
@@ -239,6 +325,36 @@ footer {
     font-size: 0.8em;
     color: white;
 }
+span.locked {
+    padding-left: 0.5em;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    color: black;
+}
+.required {
+	color: red;
+}
+.optional {
+	font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+}
+.card {
+	background: #f6f6f6;
+	color: black !important;
+}
+.card-header {
+	background: none !important;
+}
+.nav-tabs .nav-link {
+	width: 250px;
+	text-align: center;	
+}
+.nav-link.active{
+
+	color: #FE9408 !important;
+}
 .feature-img {
 	height: 100%;
 	max-height: 300px;
@@ -265,6 +381,10 @@ footer {
 .intro-icons {
 	width: 100%;
 }
+.trial-img {
+	width: 50%;
+	padding: 2em;
+}
 #key-features {
 	background: #f6f6f6;
 }
@@ -289,6 +409,7 @@ p .footer-link {
 
 .btn-trial {
 	width: 100px;
+	position: relative;
 }
 
 @media only screen and (max-width: 800px) {
