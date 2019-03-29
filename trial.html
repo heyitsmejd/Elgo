@@ -48,88 +48,42 @@
 		  </div>
 	  </div>
 	</nav>
-	<div class="jumbotron text-center text-white">
-	  <img src="images/elconfig-logo.png" class="el-logo mt-4">
-	  <h3>Introducing Elconfig -</h3>
-	  <h3>Your Deployment-free Configuration Manager</h3>
-	  <a class="btn btn-success btn-lg btn-cta mb-3" href="#" role="button">Try it free</a>
+	<div class="jumbotron py-5">
+	  
 	</div>
-	<div class="container" id="overview">
+	<div class="container">
 		<div class="row intro pt-4">
-			<div class="col-md-5">
-				<h1 class="font-weight-bold is-blue">Built for efficiency</h1>
-				<h6>Centralized configuration management via an easy-to-use web inteface. Real-time configuration updates to your application using an efficient, light-weight client interface.</h6>
-				<hr class="mt-5">
-				<div class="row mt-5">
-					<div class="col-3 col-md-2">
-						<img src="images/clock.png" class="intro-icons">
-					</div>
-					<div class="col-9 col-md-10">
-						<h3 class="font-weight-bold">Real-time, deployment-less configuration update</h3>
-						<h6>Make changes to critical application configurations in real-time without requiring a deployment.</h6>
-					</div>
+			<div class="col">
+				<h5 class="font-weight-bold is-blue">Thank you for your interest in trying Elconfig.</h1>
+				<h5>Although we're currently in Beta before our official release, we're proud to offer a completely free trial of Elconfig in exchange for your valuable feedback.</h5>
+				<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="cloud-tab" data-toggle="tab" href="#cloud" role="tab" aria-controls="home" aria-selected="true">Cloud</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="self-hosted-tab" data-toggle="tab" href="#self-hosted" role="tab" aria-controls="profile" aria-selected="false">Self-hosted</a>
+				  </li>
+				</ul>
+				<div class="tab-content pt-4" id="myTabContent">
+				  <div class="tab-pane fade show active" id="cloud" role="tabpanel" aria-labelledby="home-tab">
+				  	<p class="">
+				  		<button class="btn btn-outline-success mr-2 btn-trial" type="submit">Try it free</button>
+				  		<button class="btn btn-secondary mr-2 disabled btn-trial" type="submit" disabled>Buy</button>
+				  	</p>
+				  	<p>Maintaining a deployed application and providing high availability and scalability can be time consuming.</p>
 				</div>
-				<div class="row mt-5">
-					<div class="col-3 col-md-2">
-						<img src="images/list.png" class="intro-icons">
-					</div>
-					<div class="col-9 col-md-10">
-						<h3 class="font-weight-bold">Easy-to-use management interface</h3>
-						<h6>An easy-to-use web management interface suitable for technical and non-technical staff.</h6>
-					</div>
+				<div class="tab-pane fade" id="self-hosted" role="tabpanel" aria-labelledby="profile-tab">
+				<p>The self-hosted option gives you complete control.</p>
+
+				<p>We provide you with an installer capable of installing Elconfig and all the necessary dependencies.</p>
+
+				<p>You will be responsible for providing and maintaining a server that Elconfig needs to operate. You will also be responsibile for providing a database that Elconfig requires for persistence.</p>
+
+				<p>Currently, Elconfig supports MySQL and SQL Server.</p>
 				</div>
-			</div>
-			<div class="col-12 col-md-7">
-				<img class="intro-gif mt-6" src="images/elconfig-how-to.gif">
-			</div>	
-		</div>
-	</div>
-	<div class="section" id="key-features">
-		<div class="container">
-			<div class="row mt-5 pt-6" id="feature-1">
-				<div class="col-md-8">
-					<h1 class="font-weight-bold is-blue">Key Features</h1>
-					<h5 class="mb-2 mt-5">Easy configuration management via web app</h5>
-					<p class="lh-2">A user inteface designed with simplicity in mind. Easily make changes to application configurations using standard web form controls and save them for your application to consume. Configuring the business logic of your application has never been easier.</p>
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="images/feature_management.png" class="feature-img" id="feature-img-1">
-				</div>
-			</div>
-			<hr>
-			<div class="row mt-2 pt-2 flex-row-reverse" id="feature-2">
-				<div class="col-md-8">
-					<h5 class="mb-2 mt-5">Keep track, monitor and coordinate configuration updates with team</h5>
-					<p class="lh-2">Easily view configuration changes and notes made by other team members. Stay up to date and closely watch configurations and get notified when other team members make changes.</p>
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="images/feature_monitoring.png" class="feature-img" id="feature-img-2">
-				</div>
-			</div>
-			<hr>
-			<div class="row mt-2 pt-2">
-				<div class="col-md-8">
-					<h5 class="mb-2 mt-5">CDynamic script execution</h5>
-					<p class="lh-2">Use Elconfig's powerful Javascript execution engine to dynamically execute C# objects in a Javascript context. Dynamic script execution allows for flexible script-driven configurations; giving your application the ability to make advanced configurable business logic.</p>
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="images/feature_scripting.png" class="feature-img">
-				</div>
-			</div>
-			<hr>
-			<div class="row mt-2 pt-2 flex-row-reverse">
-				<div class="col-md-8">
-					<h5 class="mb-2 mt-5">Configuration versioning</h5>
-					<p class="lh-2">Elconfig gives you the ability to easily roll-back to a previously saved version of a configuration object. Diff the current version of a configuration object with a previous version to see what changes have been made. See a complete history log of any configuration.</p>
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="images/feature_versioning.png" class="feature-img">
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container text-center">
-		<a class="btn btn-success btn-lg btn-cta mb-3" href="#" role="button">Try it free</a>
 	</div>
 	<footer>
 		<div class="container pt-5">
@@ -245,10 +199,9 @@ footer {
 	animation: ease-in 2s;
 }
 .jumbotron {
-    background-image: URL("images/jumbo-bg.jpg");
-    background-position: center 33%;
+    background-image: URL("images/stock-bg.jpg");
+    background-position: center 60%;
     background-size: cover;
-    padding-top: 110px;
     border-radius: 0;
 }
 .lh-2 {
@@ -330,6 +283,13 @@ p .footer-link {
 .footer-link:hover {
 	color: #FE9408;
 }
+
+/*trial~~*/
+
+.btn-trial {
+	width: 100px;
+}
+
 @media only screen and (max-width: 800px) {
   .intro-gif {
     width: 100%;
