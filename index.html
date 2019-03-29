@@ -3,6 +3,7 @@
 <head>
 	<title>Test.</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -56,33 +57,161 @@
 	<div class="container">
 		<div class="row intro pt-4">
 			<div class="col-md-5">
-				<h1 class="font-weight-bold">Built for efficiency</h1>
+				<h1 class="font-weight-bold is-blue">Built for efficiency</h1>
 				<h6>Centralized configuration management via an easy-to-use web inteface. Real-time configuration updates to your application using an efficient, light-weight client interface.</h6>
 				<hr class="mt-5">
 				<div class="row mt-5">
-					<div class="col-md-2">
-						<img src="images/clock.png" width="100%">
+					<div class="col-3 col-md-2">
+						<img src="images/clock.png" class="intro-icons">
 					</div>
-					<div class="col-md-10">
+					<div class="col-9 col-md-10">
 						<h3 class="font-weight-bold">Real-time, deployment-less configuration update</h3>
 						<h6>Make changes to critical application configurations in real-time without requiring a deployment.</h6>
 					</div>
 				</div>
 				<div class="row mt-5">
-					<div class="col-md-2">
-						<img src="images/list.png" width="100%">
+					<div class="col-3 col-md-2">
+						<img src="images/list.png" class="intro-icons">
 					</div>
-					<div class="col-md-10">
+					<div class="col-9 col-md-10">
 						<h3 class="font-weight-bold">Easy-to-use management interface</h3>
 						<h6>An easy-to-use web management interface suitable for technical and non-technical staff.</h6>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7">
+			<div class="col-12 col-md-7">
 				<img class="intro-gif mt-6" src="images/elconfig-how-to.gif">
 			</div>	
 		</div>
 	</div>
+	<div class="section" id="key-features">
+		<div class="container">
+			<div class="row mt-5 pt-6" id="feature-1">
+				<div class="col-md-8">
+					<h1 class="font-weight-bold is-blue">Key Features</h1>
+					<h5 class="mb-2 mt-5">Easy configuration management via web app</h5>
+					<p class="lh-2">A user inteface designed with simplicity in mind. Easily make changes to application configurations using standard web form controls and save them for your application to consume. Configuring the business logic of your application has never been easier.</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="images/feature_management.png" class="feature-img" id="feature-img-1">
+				</div>
+			</div>
+			<hr>
+			<div class="row mt-2 pt-2 flex-row-reverse" id="feature-2">
+				<div class="col-md-8">
+					<h5 class="mb-2 mt-5">Keep track, monitor and coordinate configuration updates with team</h5>
+					<p class="lh-2">Easily view configuration changes and notes made by other team members. Stay up to date and closely watch configurations and get notified when other team members make changes.</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="images/feature_monitoring.png" class="feature-img" id="feature-img-2">
+				</div>
+			</div>
+			<hr>
+			<div class="row mt-2 pt-2">
+				<div class="col-md-8">
+					<h5 class="mb-2 mt-5">CDynamic script execution</h5>
+					<p class="lh-2">Use Elconfig's powerful Javascript execution engine to dynamically execute C# objects in a Javascript context. Dynamic script execution allows for flexible script-driven configurations; giving your application the ability to make advanced configurable business logic.</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="images/feature_scripting.png" class="feature-img">
+				</div>
+			</div>
+			<hr>
+			<div class="row mt-2 pt-2 flex-row-reverse">
+				<div class="col-md-8">
+					<h5 class="mb-2 mt-5">Configuration versioning</h5>
+					<p class="lh-2">Elconfig gives you the ability to easily roll-back to a previously saved version of a configuration object. Diff the current version of a configuration object with a previous version to see what changes have been made. See a complete history log of any configuration.</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="images/feature_versioning.png" class="feature-img">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container text-center">
+		<a class="btn btn-success btn-lg btn-cta mb-3" href="#" role="button">Try it free</a>
+	</div>
+	<footer>
+		<div class="container pt-5">
+			<div class="row">
+				<div class="col-md-2 offset-md-1">
+					<div class="row">
+						<div class="col">
+							<p><a href=""  class="footer-link">Product</a></p>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col">
+							<ul class="no-style pl-0">
+								<li><a href=""  class="footer-link">Overview</a></li>
+								<li><a href=""  class="footer-link">Features</a></li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col">
+							<p><a href=""  class="footer-link">Documentation</a></p>	
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col">
+							<ul class="no-style pl-0">
+								<li><a href=""  class="footer-link">Getting Started</a></li>
+								<li><a href=""  class="footer-link">Client</a></li>
+								<li><a href=""  class="footer-link">Configuration Objects</a></li>
+								<li><a href=""  class="footer-link">Dynamic Configuration Objects</a></li>
+								<li><a href=""  class="footer-link">Web Application</a></li>
+							</ul>
+						</div>
+					</div>			
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col">
+							<p><a href=""  class="footer-link">Trial</a></p>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col">
+							<ul class="no-style pl-0">
+								<li><a href="" class="footer-link">Overview</a></li>
+								<li><a href="" class="footer-link">Self-hosted</a></li>
+								<li><a href="" class="footer-link">Try free now</a></li>
+								<li><a href="" class="footer-link">Pricing</a></li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col">
+							<p><a href="" class="footer-link">Connect</a></p>
+						</div>
+					</div>	
+					<div class="row mb-3 mt-1">
+						<div class="col">
+							<a href="" class="footer-link"><i class="fab fa-facebook-square"></i></a>
+							<a href="" class="footer-link"><i class="fab fa-twitter-square"></i></a>
+							<a href="" class="footer-link"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col">
+							<p><a href="" class="footer-link">Contact Us</a></p>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="row mt-5 pb-3">
+				<div class="col text-center">
+					<p>© 2019 Elgorithm, LLC. All rights reserved.</p>
+					<p><a href="" class="footer-link">Terms</a> <a href="#" class="footer-link">•</a> <a href="#" class="footer-link">Privacy</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
 <style>
@@ -92,11 +221,37 @@ body {
     line-height: 1.5;
     color: #212529;
 }
+footer {
+	color: white;
+	text-decoration: none;
+}
+.fab {
+	font-size: 2em;
+    color: white;
+    padding-right: 1em;
+}
+.fab:hover {
+	color: #3b5998;
+}
+#feature-img-1 {
+/*	display: none;*/
+	animation: ease-in 2s;
+}
 .jumbotron {
     background-image: URL("images/jumbo-bg.jpg");
     background-position: center 33%;
     background-size: cover;
     padding-top: 110px;
+    border-radius: 0;
+}
+.lh-2 {
+	line-height: 2.5rem;
+}
+.is-blue {
+	color: #005689;
+}
+.pt-6 {
+	padding-top: 4rem!important;
 }
 .mt-6 {
 	margin-top: 4rem!important;
@@ -111,7 +266,7 @@ body {
 	font-weight: 600 !important;
 	font-size: 1rem;
 }
-.dropdown-menu {
+.dropdown-menu, footer {
 	background-image: URL("images/footer-bg.png");
 }
 .dropdown-item:hover {
@@ -122,6 +277,13 @@ body {
     padding-bottom: 10px;
     font-size: 0.8em;
     color: white;
+}
+.feature-img {
+	height: 100%;
+	max-height: 300px;
+}
+.no-style {
+	list-style: none;
 }
 .btn-cta {
     margin-top: 20px;
@@ -135,11 +297,35 @@ body {
 .intro h6 {
 	line-height: 2.5em;
 }
-.intro h1 {
-	color: #005689;
-}
 .intro-gif {
 	width: 140%;
 	border-radius: 1em;
+}
+.intro-icons {
+	width: 100%;
+}
+#key-features {
+	background: #f6f6f6;
+}
+#key-features h5 {
+	color: #FE9408;
+}
+.footer-link {
+	text-decoration: none !important;
+	color: #00aced;;
+}
+p .footer-link {
+	color: white;
+}
+.no-style li {
+	height: 2em;
+}
+.footer-link:hover {
+	color: #FE9408;
+}
+@media only screen and (max-width: 800px) {
+  .intro-gif {
+    width: 100%;
+  }
 }
 </style>
